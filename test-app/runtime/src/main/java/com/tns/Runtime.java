@@ -678,8 +678,9 @@ public class Runtime {
                     ? mostOuterClass.getPackage()
                     : clazz.getPackage();
 
-        int packageCount = 1;
-        String pname = p.getName();
+        int packageCount = p != null ? 1 : 0;
+        String pname = p != null ? p.getName() : "";
+        
         for (int i = 0; i < pname.length(); i++) {
             if (pname.charAt(i) == '.') {
                 ++packageCount;
