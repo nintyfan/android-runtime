@@ -27,7 +27,7 @@ import org.apache.bcel.classfile.JavaClass;
 import org.apache.bcel.classfile.Method;
 import org.apache.bcel.generic.Type;
 
-import javafx.util.Pair;
+//import javafx.util.Pair;
 
 public class Generator {
     private static final String JAVA_EXT = ".java";
